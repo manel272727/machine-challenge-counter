@@ -1,38 +1,115 @@
+body {
+  background-color: #f7f9fc;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .App {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  color: #333;
+}
+
+button {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #4338ca;
+}
+
+.formContainer {
+  margin-top: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f9fafb;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  background: white;
+}
+
+th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+}
+
+th, td {
+  border: 1px solid #e5e7eb;
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.badge.easy {
+  background-color: #10b981; /* green */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.badge.medium {
+  background-color: #f59e0b; /* yellow/orange */
+}
+
+.badge.hard {
+  background-color: #ef4444; /* red */
+}
+
+.summary-card {
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 14px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.delete-button {
+  background-color: #ef4444;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.delete-button:hover {
+  background-color: #b91c1c;
 }
